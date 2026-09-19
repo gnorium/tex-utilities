@@ -1,0 +1,6 @@
+{
+  "name": "@gnorium/tex-utilities",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node --test Tests/Browser/*.test.mjs" }
+}
