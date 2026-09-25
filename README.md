@@ -32,7 +32,7 @@ Add `.product(name: "TeXUtilities", package: "tex-utilities")` to the target tha
 ```swift
 import TeXUtilities
 
-let html = TeXRenderer.placeholder(source: #"x^2 + y^2 = z^2"#, displayMode: true)
+let html = TeXRenderer.placeholder(#"x^2 + y^2 = z^2"#, displayMode: true)
 ```
 
 Include `Browser/tex.js` in the page and call `render(root)` after the formula elements are inserted. In Gnorium, XMLUtilities extracts TEI formulas, WebComponents' TeXView emits the placeholder, and `make tex-assets` copies the browser files into `gnorium-web/Public/tex-utilities`.
