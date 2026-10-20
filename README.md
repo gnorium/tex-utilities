@@ -58,6 +58,7 @@ Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE). Vendored
 - [diff-engine](https://github.com/gnorium/diff-engine) - Platform-agnostic character-level diff engine
 - [embedded-swift-utilities](https://github.com/gnorium/embedded-swift-utilities) - Utility functions for Embedded Swift environments
 - [markdown-utilities](https://github.com/gnorium/markdown-utilities) - Markdown rendering with extended syntax
+- [philology-tools](https://github.com/gnorium/philology-tools) - Corpus-linguistic measures for historical lexicography
 - [web-apis](https://github.com/gnorium/web-apis) - Web API implementations for Swift WebAssembly
 - [web-builders](https://github.com/gnorium/web-builders) - HTML, CSS, JS, and SVG DSL builders
 - [web-components](https://github.com/gnorium/web-components) - Reusable UI components for web applications
