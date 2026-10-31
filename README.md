@@ -35,7 +35,7 @@ import TeXUtilities
 let html = TeXRenderer.placeholder(#"x^2 + y^2 = z^2"#, displayMode: true)
 ```
 
-Include `Browser/tex.js` in the page and call `render(root)` after the formula elements are inserted. In Gnorium, XMLUtilities extracts TEI formulas, WebComponents' TeXView emits the placeholder, and `make tex-assets` copies the browser files into `gnorium-web/Public/tex-utilities`.
+Include `Browser/tex.js` in the page and call `render(root)` after the formula elements are inserted. In Gnorium, XMLUtilities extracts TEI formulas, WebComponents' TeXView emits the placeholder, and `make tex-assets` copies the browser files into `gnorium-web/Public/tex-utilities`. KaTeX's module and stylesheet are named relative to `tex.js` (the stylesheet through `import.meta.resolve`), so a page's import map can point either at a versioned copy.
 
 ## Running tests
 

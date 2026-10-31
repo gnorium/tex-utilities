@@ -37,7 +37,9 @@ function loadStyles() {
         stylesReady = new Promise((resolve, reject) => {
             const link = document.createElement("link");
             link.rel = "stylesheet";
-            link.href = new URL("./vendor/katex-0.18.7/katex.min.css", import.meta.url).href;
+            // Through the page's import map, which may name a copy versioned
+            // by its bytes (fonts too) that is cached for good.
+            link.href = import.meta.resolve("./vendor/katex-0.18.7/katex.min.css");
             link.onload = resolve;
             link.onerror = () => {
                 link.remove();
